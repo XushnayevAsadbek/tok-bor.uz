@@ -1,0 +1,104 @@
+.section6-heading {
+    margin-bottom: 30px;
+    color: #000;
+    font-size: calc(32px + 21 * ((100vw - 320px) / 1216));
+    font-weight: var(--weight-m-700);
+    line-height: 120%;
+}
+
+.section6-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: calc(25px + 95 * ((100vw - 320px) / 1216));
+    
+
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 32px;
+        border: 1px solid #cfcfcf;
+        border-radius: 20px;
+        overflow: hidden;
+        font-size: 40px;
+
+        &--heading {
+            color: #209c3c;
+            font-weight: 800;
+            height: max-content;
+            margin-bottom: 32px
+            
+
+
+           
+        }
+
+        &--text{
+            font-size: 16px;
+            font-weight: bold
+
+        }
+
+        &--heading1{
+            color: #fff;
+            font-weight: 800;
+            height: max-content;
+            margin-bottom: 32px
+        }
+    }
+
+    &__card1{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 32px;
+        border: 1px solid #cfcfcf;
+        border-radius: 20px;
+        overflow: hidden;
+     background-color: #209c3c;
+     font-size: 40px;
+
+    }
+    &__btn{
+            width: 100%;
+            max-width: 324px;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            border-radius: 40px;
+            justify-content: center;
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: var(--font-WeightMain);
+            cursor: pointer;
+            padding: 22px 20px;
+            border: none;
+            background-color: #1ee64c;
+            color: #fff;
+            margin-top: 15px;
+            
+    }
+
+    &__btn:hover{
+        background-color: #057720;
+    }
+}
+
+@media(max-width:576px){
+    .section6-box {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-bottom: calc(25px + 95 * ((100vw - 320px) / 1216));
+    }    
+}

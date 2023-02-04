@@ -1,0 +1,101 @@
+.section2-box {
+    background-color: green;
+    border-radius: 20px;
+
+
+    &__heading2 {
+        color: #fff;
+        padding: 50px 20px 0 20px;
+        font-weight: var(--weight-m-700);
+        line-height: 120%;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+      
+
+        &--img {
+            padding: 0 20px 0 20px;
+           
+        }
+
+        &--wrapper {
+            margin-right: 20px;
+            background: #fff;
+            border-radius: 20px;
+            margin-bottom: 30px;
+        }
+
+        &--heading3 {
+            padding: 40px 40px 0 40px;
+            margin-bottom: 20px;
+            font-size: calc(20px + 10 * ((100vw - 320px) / 1216));
+            font-size: 30px;
+        }
+
+        &--text {
+            font-weight: var(--weight-m-400);
+            font-size: 16px;
+            color: #727272;
+            padding: 0 40px;
+        }
+
+        &--btn {
+            background-color: green;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            border-radius: 100px;
+            margin-top: 34px;
+            padding: 24px 32px;
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #fff;
+            border: none;
+            margin-left: 40px;
+            
+            
+        }
+        &--btn:hover{
+            background-color: #fff;
+            color: green;
+            border: 1px solid green;
+        }
+    }
+
+}
+
+@media(max-width:992px){
+
+
+    .section2-box__heading2{
+        text-align: center;
+    }
+    .section2-box__card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 40px;
+
+        &--img{
+            
+        }
+        &--wrapper{
+            width: 520px;
+            margin-top: 20px;
+            
+        }
+
+        &--btn{
+            margin-bottom: 25px;
+        }
+    }
+}
+@media(max-width:576px){
+
+}
